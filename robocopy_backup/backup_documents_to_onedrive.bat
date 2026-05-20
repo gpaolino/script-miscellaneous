@@ -22,7 +22,7 @@ if defined OneDrive (
 :: /NP    => no progress percent
 :: /V     => verbose
 :: /LOG:  => save log
-set "ROBO_FLAGS=/MIR /Z /COPY:DAT /DCOPY:T /R:3 /W:5 /NFL /NDL /NP /V"
+set "ROBO_FLAGS=/MIR /Z /COPY:DAT /DCOPY:T /R:3 /W:5 /NFL /NDL /NP /V /XJ"
 
 :: Log files in user's Temp folder with timestamp
 for /f "tokens=1-4 delims=/ " %%a in ('date /t') do set D=%%c-%%b-%%a
